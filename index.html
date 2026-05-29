@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Ismat Jereen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content span {
+            color: #38bdf8;
+        }
+
+        .hero-content p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 35px;
+            color: #0f172a;
+        }
+
+        .about {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .skill {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero-content h2{
+        font-size:35px;
+      }
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:10px;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <h1>
+                My Portfolio
+            </h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>Ismat Jereen</span></h2>
+            <p>CSE Student | Web Developer | Pragrammer</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <img height="350" src="image1.jpg" alt="Profile Picture">
+
+            <div class="about-text">
+                <p>
+                    I am a Computer Science and Engineering student passionate about web development, programming and
+                    problem solving. I love learning new technologies and building projects.
+                </p>
+
+                <br>
+                <p>
+                    My interests include Web Development, Data Structures,
+                    Algorithms, Database Systems and Software Engineering.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skill">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact">
+            <p>Email: ismatjereen@gmail.com</p>
+            <p>Phone: +8801552457573</p>
+            <p>GitHub: https://github.com/ismat-jereen</p>
+        </div>
+    </section>
+
+    <footer>
+    <p>© 2026 Ismat Jereen | Portfolio of Jereen</p>
+  </footer>
+
+</body>
+
+</html>
